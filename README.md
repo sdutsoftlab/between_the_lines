@@ -1,16 +1,36 @@
-# flutter_between_the_lines
+# 字里行间
 
-A new Flutter project.
+一个用于UI练手的Flutter项目
 
-## Getting Started
+## 项目UI设计图
 
-This project is a starting point for a Flutter application.
+来源：[Dribbble](https://dribbble.com/shots/14856637-Bookstore-Mobile-App-Exploration/attachments/6566629?mode=media)
 
-A few resources to get you started if this is your first Flutter project:
+![设计图](https://cdn.dribbble.com/users/5160402/screenshots/14856637/media/265e4b6b80fbd274118728894921aab1.jpg)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## APP运行时截图
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+# Discover页面
+
+![Discover](/imgShow/discover.jpg)
+
+
+
+# Search页面
+
+![search](/imgShow/search.jpg)
+
+
+
+# Favorite页面
+
+![favorite](/imgShow/favorite.jpg)
+
+
+
+# BookDescription页面
+
+![description](/imgShow/detail.jpg)
+
