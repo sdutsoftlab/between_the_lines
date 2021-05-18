@@ -3,8 +3,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_between_the_lines/src/service/helper/evaluation_introduction.dart';
 import 'package:flutter_between_the_lines/src/service/utils/style_kits.dart';
-import 'package:flutter_between_the_lines/src/widget/awesome_tab_bar.dart';
-import 'package:flutter_between_the_lines/src/widget/evaluation_card.dart';
+import '../../widget/public/awesome_tab_bar.dart';
+import '../../widget/public/evaluation_card.dart';
 import 'package:get/get.dart';
 
 import 'book_description_logic.dart';

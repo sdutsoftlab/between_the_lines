@@ -1,7 +1,7 @@
 /// FileName: book_card
 /// Author: admin
 /// Date: 2021-05-15 15:04
-/// Description: 书籍卡片
+/// Description: 书籍卡片，样式为上边是图片，下边是标题，类似小说信息卡片
 
 
 import 'package:flutter/material.dart';

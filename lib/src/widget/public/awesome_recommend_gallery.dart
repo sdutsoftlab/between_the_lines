@@ -4,21 +4,25 @@
 /// Description: 推荐纵向列表
 
 import 'package:flutter/material.dart';
+import 'package:flutter_between_the_lines/src/service/defined.dart';
 import 'package:flutter_between_the_lines/src/service/helper/recommend_introduction.dart';
 import 'package:flutter_between_the_lines/src/service/utils/style_kits.dart';
-import 'package:flutter_between_the_lines/src/widget/normal_divider.dart';
-import 'package:flutter_between_the_lines/src/widget/recommend_card.dart';
+import 'normal_divider.dart';
 
 class AwesomeRecommendGallery extends StatelessWidget {
 
   AwesomeRecommendGallery({
       this.galleryTitle = 'You might like',
-      required this.recommendData,
+      required this.builder,
+      required this.length,
       this.eachHeight
   });
 
-  /// 推荐数据
-  final List<RecommendIntroduction> recommendData;
+  /// 数据构建函数
+  final builderFunction builder;
+
+  /// 数据集的大小
+  final int length;
 
   /// 表格的标题
   final String galleryTitle;
@@ -47,18 +51,10 @@ class AwesomeRecommendGallery extends StatelessWidget {
             shrinkWrap: true,
             physics: new NeverScrollableScrollPhysics(),
 
-            itemCount: this.recommendData.length,
+            itemCount: this.length,
 
-            itemBuilder: (BuildContext context, int index) {
-              return RecommendCard(
-                title: this.recommendData[index].title,
-                author: this.recommendData[index].author,
-                imgSrc: this.recommendData[index].imgSrc,
-                page: this.recommendData[index].pages,
-                onTapImage: this.recommendData[index].onTapImage,
-                onTapSave: this.recommendData[index].onTapSave
-              );
-            },
+            itemBuilder: this.builder,
+
             separatorBuilder: (BuildContext context, int index) {
               return NormalDivider();
             },

@@ -1,7 +1,7 @@
 /// FileName: recommend_card
 /// Author: admin
 /// Date: 2021-05-15 16:20
-/// Description: 推荐卡片组件
+/// Description: 推荐卡片组件，左边为图片，右侧的上边为标题，中间是作者，下面是页数
 
 import 'package:flutter/material.dart';
 import 'package:flutter_between_the_lines/src/service/defined.dart';

@@ -1,3 +1,5 @@
+import 'package:flutter/cupertino.dart';
+
 /// FileName: defined
 /// Author: admin
 /// Date: 2021-05-15 16:39
@@ -5,3 +7,4 @@
 
 typedef vfunc = void Function();
 typedef sfunc = void Function(String value);
+typedef builderFunction = Widget Function(BuildContext, int);

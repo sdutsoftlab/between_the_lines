@@ -16,8 +16,7 @@ class MainClass extends StatelessWidget {
       title: '字里行间',
       theme: ThemeData(
           primaryColor: ThemeMain.colorTheme,
-          highlightColor: Colors.transparent,
-          splashColor: Colors.transparent),
+      ),
       getPages: AppRouter.page,
       home: ScaffoldMainClass(),
       debugShowCheckedModeBanner: false,

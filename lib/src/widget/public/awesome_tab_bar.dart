@@ -133,5 +133,3 @@ class _AwesomeTabBarState extends State<AwesomeTabBar>
   // TODO: implement wantKeepAlive
   bool get wantKeepAlive => true;
 }
-
-
