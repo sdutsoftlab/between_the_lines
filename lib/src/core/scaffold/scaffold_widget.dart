@@ -22,9 +22,13 @@ class _ScaffoldMainClassState extends State<ScaffoldMainClass>
     with SingleTickerProviderStateMixin {
   late TabController tabController;
   final List<Widget> tabBarViewList = [
+    // 主页， 即 底部导航中 小房子图标的页面
     HomePage(),
+    // 搜索页 即 底部导航中 放大镜图标的页面
     SearchPage(),
+    // 收藏页 即 底部导航中 心形图标的页面
     FavoritePage(),
+    // 用户页
     UserPage()
   ];
   final List<Widget> tabBarList = [

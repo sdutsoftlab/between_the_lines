@@ -1,7 +1,7 @@
 /// FileName: evaluation_card
 /// Author: admin
 /// Date: 2021-05-16 17:18
-/// Description: 评价表格组件
+/// Description: 书籍或视频评价信息，内部为横向列表
 
 import 'package:flutter/material.dart';
 import 'package:flutter_between_the_lines/src/service/helper/evaluation_introduction.dart';

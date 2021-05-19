@@ -1,11 +1,10 @@
 /// FileName: awesome_recommend_gallery
 /// Author: admin
 /// Date: 2021-05-15 16:13
-/// Description: 推荐纵向列表
+/// Description: 推荐纵向列表, 有列表标题，列表分隔线
 
 import 'package:flutter/material.dart';
 import 'package:flutter_between_the_lines/src/service/defined.dart';
-import 'package:flutter_between_the_lines/src/service/helper/recommend_introduction.dart';
 import 'package:flutter_between_the_lines/src/service/utils/style_kits.dart';
 import 'normal_divider.dart';
 

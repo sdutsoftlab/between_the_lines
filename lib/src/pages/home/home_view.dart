@@ -37,7 +37,10 @@ class HomePage extends StatelessWidget {
             builder: (BuildContext context, int index) {
               return VideoShowCard(
                 onPressed: () {
-                  print('你好世界');
+                  // 页面跳转
+                  Get.toNamed(AppRouterMapValues.VideoPlayPage, parameters: {
+                    "id": "1"
+                  });
                 },
                 title: '【派大星的独白】一个关于正常人的故事',
                 imgSrc: 'http://i1.hdslb.com/bfs/archive/3e2e1e0b3c1108b83148bd2f51b3d28fc94c3b63.jpg@412w_232h_1c.webp',

@@ -1,7 +1,7 @@
 /// FileName: favorite_grid_view
 /// Author: admin
 /// Date: 2021-05-16 13:49
-/// Description: 收藏页面的宫格组件
+/// Description: 收藏页面的宫格组件, 简单宫格封装
 
 import 'package:flutter/material.dart';
 import 'package:flutter_between_the_lines/src/service/defined.dart';
