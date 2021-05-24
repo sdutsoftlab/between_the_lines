@@ -9,13 +9,11 @@ import 'package:flutter_between_the_lines/src/service/utils/style_kits.dart';
 import 'normal_divider.dart';
 
 class AwesomeRecommendGallery extends StatelessWidget {
-
-  AwesomeRecommendGallery({
-      this.galleryTitle = 'You might like',
+  AwesomeRecommendGallery(
+      {this.galleryTitle,
       required this.builder,
       required this.length,
-      this.eachHeight
-  });
+      this.eachHeight});
 
   /// 数据构建函数
   final builderFunction builder;
@@ -24,7 +22,7 @@ class AwesomeRecommendGallery extends StatelessWidget {
   final int length;
 
   /// 表格的标题
-  final String galleryTitle;
+  final String? galleryTitle;
 
   /// 每一个项的固定高度
   final double? eachHeight;
@@ -35,25 +33,23 @@ class AwesomeRecommendGallery extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            margin: EdgeInsets.fromLTRB(StyleKits.px(15.0), StyleKits.px(15.0), 0, StyleKits.px(15.0)),
-            child: Text(
-              this.galleryTitle,
-              style: TextStyle(
-                  fontSize: StyleKits.px(18.0),
-                  fontWeight: FontWeight.bold
-              ),
-            ),
-          ),
+          this.galleryTitle != null
+              ? Container(
+                  margin: EdgeInsets.fromLTRB(StyleKits.px(15.0),
+                      StyleKits.px(15.0), 0, StyleKits.px(15.0)),
+                  child: Text(
+                    this.galleryTitle ?? '',
+                    style: TextStyle(
+                        fontSize: StyleKits.px(18.0),
+                        fontWeight: FontWeight.bold),
+                  ),
+                )
+              : Container(),
           ListView.separated(
-
             shrinkWrap: true,
             physics: new NeverScrollableScrollPhysics(),
-
             itemCount: this.length,
-
             itemBuilder: this.builder,
-
             separatorBuilder: (BuildContext context, int index) {
               return NormalDivider();
             },

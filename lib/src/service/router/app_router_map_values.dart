@@ -4,5 +4,5 @@ class AppRouterMapValues {
   static const FavoritePage = '/favorite';
   static const UserPage = '/user';
   static const BookDescriptionPage = '/book_description';
-  static const VideoPlayPage = '/video_play';
+  static const VideoPlayerPage = '/video_player';
 }
